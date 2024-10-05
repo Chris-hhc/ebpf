@@ -46,7 +46,7 @@ jobs:
           platforms: linux/amd64
           # Note: tags has to be all lower-case
           tags: |
-            ghcr.io/chris/ebpf
+            ghcr.io/${{ github.repository | toLowerCase }}
           push: true
 
       - name: Image digest
